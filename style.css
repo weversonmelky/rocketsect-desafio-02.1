@@ -1,0 +1,122 @@
+:root {
+  --bg-color: #2f2e41;
+  --primary-color: #00bfa6;
+  --secundary-color: #c2c2c2;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #e7e7e7;
+}
+
+body {
+  background-color: var(--bg-color);
+  padding: 70px 100px 0;
+  color: var(--secundary-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 46px;
+}
+
+ul li {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--secundary-color);
+}
+
+a:hover {
+  color: var(--quaternary-color);
+}
+
+h1,
+a,
+footer {
+  font-family: "JetBrains Mono", monospace;
+}
+
+main {
+  margin: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 82px;
+}
+
+section {
+  width: 605px;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "JetBrains Mono";
+  font-size: 36px;
+  line-height: 40px;
+
+  overflow: hidden;
+  border-right: 3px solid white;
+  white-space: nowrap;
+  animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+h1 span {
+  color: var(--primary-color);
+}
+
+p {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 28px; /* 175% */
+}
+
+p + P {
+  margin-top: 40px;
+}
+
+footer {
+  margin-top: 143px;
+  text-align: center;
+}
+
+#line {
+  margin: 0 auto 27px;
+  width: 568.001px;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+#padlock {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
